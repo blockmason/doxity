@@ -7,7 +7,8 @@ import compile from 'truffle-compile';
 export default function (src) {
   // detect if we're in a truffle project
   return new Promise((resolve) => {
-    if (fs.existsSync(`${process.env.PWD}/truffle.js`)) {
+      if (false) //(fs.existsSync(`${process.env.PWD}/truffle.js`))
+      {
       const config = Config.default();
       config.resolver = new Resolver(config);
       config.rawData = true;
